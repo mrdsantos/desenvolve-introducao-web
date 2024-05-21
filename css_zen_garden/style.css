@@ -18,3 +18,44 @@ Subtitle: #d936a0
 Text: #f2527D
 Elements: #18d9d9
 */
+
+html {
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+/*    overflow: hidden;*/
+  }
+
+p {
+    text-indent: 1em;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+[role="article"] > p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+abbr {
+    text-transform: lowercase;
+}
