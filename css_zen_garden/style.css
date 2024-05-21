@@ -21,9 +21,10 @@ Elements: #18d9d9
 
 html {
 	font-family: sans-serif;
+	margin: 0 auto;
+
 }
 
-html,
 body {
 	height: 100%;
 	margin: 0;
@@ -102,39 +103,71 @@ nav ul li {
 
 footer {
 	margin-bottom: 4%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
 }
 
 footer a {
-	border: solid 1px #151740;
+	border: solid 1px #18d9d9;;
 	padding: 0em 0.5em;
 }
 
 .explanation {
 	width: 60%;
 	margin-right: 35%;
-	border-right: solid 1px #1f295c;
+	border-right: solid 1px #18d9d9;;
 	padding-right: 2%;
 }
 
 #design-selection {
     position: absolute;
-    top: 560px;
+    top: 550px;
     left: 62%;
     padding: 0% 3%;
 }
 
-/*  Agora mova o menu de designs para a direita da página,
- ocupando o espaço em branco deixado pelo elemento .explanation .
+footer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	text-align: center;
+}
 
-- Faça-o iniciar na parte superior da página,
- após a parte de introdução (por exemplo, aplicando top: 560px ).
+footer a {
+	flex-basis: 80px;
+}
 
-- Faça-o iniciar após o elemento .explanation 
-(por exemplo, aplicando left: 62% ).
+#zen-benefits {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	border-bottom: solid 1px #18d9d9;
+	border-top: solid 1px #18d9d9;
+}
 
-- Adicione um espaçamento interno horizontal de 2% no menu para centralizá-lo.
+#zen-benefits h3 {
+	flex-grow: 3;
+	order: 2;
+}
 
-*/
+#zen-benefits p {
+	flex-grow: 7;
+	order: 1;
+}
+
+#zen-participation {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	border-top: 1px solid #18d9d9;
+
+}
+
+#zen-participation h3 {
+	order: 1;
+	flex-basis: 50%;
+}
+
+#zen-participation p {
+	order: 2;
+	flex-basis: 50%;
+	
+}
