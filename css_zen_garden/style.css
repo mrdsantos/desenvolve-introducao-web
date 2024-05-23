@@ -1,4 +1,5 @@
 /*
+Color Theme Swatches in HEX
 .Retro-1980s-style-background-with-palm-trees,-sun,-and-mountains.-Futuristics-Landscape-1-hex { color: #F2527D; }
 .Retro-1980s-style-background-with-palm-trees,-sun,-and-mountains.-Futuristics-Landscape-2-hex { color: #D936A0; }
 .Retro-1980s-style-background-with-palm-trees,-sun,-and-mountains.-Futuristics-Landscape-3-hex { color: #F249D6; }
@@ -22,24 +23,27 @@ Elements: #18d9d9
 html {
 	font-family: sans-serif;
 	margin: 0 auto;
-
+	color: #f2527d;
 }
 
 body {
 	height: 100%;
 	margin: 0;
 	padding: 15px;
+	background-color: #151740;
 	/*    overflow: hidden;*/
 }
 
 p {
 	text-indent: 1em;
+	color: #f2527d;
 }
 
 h1,
 h2,
 h3 {
 	text-align: center;
+	color: #d936a0;
 }
 
 h1 {
@@ -54,17 +58,18 @@ h3 {
 	font-size: 1.2rem;
 }
 
+abbr {
+	/*	text-transform: lowercase;*/
+	text-decoration: none;
+}
+
 [role="article"] > p {
 	text-align: center;
 	line-height: 1.5;
 }
 
-abbr {
-	text-transform: lowercase;
-}
-
 #design-archives {
-display: none;
+	display: none;
 }
 
 .page-wrapper {
@@ -74,7 +79,7 @@ display: none;
 }
 
 #zen-intro {
-	height: 550px;
+	height: 450px;
 }
 
 #zen-intro > header {
@@ -106,22 +111,23 @@ footer {
 }
 
 footer a {
-	border: solid 1px #18d9d9;;
+	border: solid 1px #18d9d9;
 	padding: 0em 0.5em;
 }
 
 .explanation {
 	width: 60%;
+	height: 420px;
 	margin-right: 35%;
-	border-right: solid 1px #18d9d9;;
+	border-right: solid 2px #18d9d9;
 	padding-right: 2%;
 }
 
 #design-selection {
-    position: absolute;
-    top: 550px;
-    left: 62%;
-    padding: 0% 3%;
+	position: absolute;
+	top: 450px;
+	left: 62%;
+	padding: 0% 3%;
 }
 
 footer {
@@ -158,7 +164,6 @@ footer a {
 	flex-flow: row wrap;
 	align-items: center;
 	border-top: 1px solid #18d9d9;
-
 }
 
 #zen-participation h3 {
@@ -169,5 +174,35 @@ footer a {
 #zen-participation p {
 	order: 2;
 	flex-basis: 50%;
-	
+}
+
+a {
+	color: #f249d6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ff7ee9;
+}
+
+a:visited {
+	color: #f249d6;
+	font-weight: normal;
+}
+
+[role="main"] p:first-of-type::first-letter {
+	font-size: 3rem;
+	font-family: "Times New Roman", Times, serif;
+	float: left;
+}
+
+nav ul li {
+	border-top: solid 1px #18d9d9;
+	padding-top: 10px;
+}
+
+nav ul li:last-child {
+	border-bottom: solid 1px #18d9d9;
+	padding-bottom: 10px;
 }
