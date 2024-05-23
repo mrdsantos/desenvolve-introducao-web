@@ -28,14 +28,17 @@ html {
 
 body {
 	height: 100%;
-	margin: 0;
+	margin: 0 auto;
 	padding: 15px;
 	background-color: #151740;
 	/*    overflow: hidden;*/
 }
 
+.page-wrapper {
+	margin: 2em 1em;
+}
+
 p {
-	text-indent: 1em;
 	color: #f2527d;
 }
 
@@ -65,25 +68,14 @@ abbr {
 
 [role="article"] > p {
 	text-align: center;
-	line-height: 1.5;
 }
 
 #design-archives {
 	display: none;
 }
 
-.page-wrapper {
-	max-width: 1280px;
-	width: 80%;
-	position: relative;
-}
-
-#zen-intro {
-	height: 450px;
-}
-
 #zen-intro > header {
-	background-color: #151740;
+	background-color: #0c0d24;
 	color: white;
 }
 
@@ -108,29 +100,6 @@ nav ul li {
 
 footer {
 	margin-bottom: 4%;
-}
-
-footer a {
-	border: solid 1px #18d9d9;
-	padding: 0em 0.5em;
-}
-
-.explanation {
-	width: 60%;
-	height: 420px;
-	margin-right: 35%;
-	border-right: solid 2px #18d9d9;
-	padding-right: 2%;
-}
-
-#design-selection {
-	position: absolute;
-	top: 450px;
-	left: 62%;
-	padding: 0% 3%;
-}
-
-footer {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
@@ -138,42 +107,9 @@ footer {
 }
 
 footer a {
+	border: solid 1px #18d9d9;
+	padding: 0em 0.5em;
 	flex-basis: 80px;
-}
-
-#zen-benefits {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	border-bottom: solid 1px #18d9d9;
-	border-top: solid 1px #18d9d9;
-}
-
-#zen-benefits h3 {
-	flex-grow: 3;
-	order: 2;
-}
-
-#zen-benefits p {
-	flex-grow: 7;
-	order: 1;
-}
-
-#zen-participation {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	border-top: 1px solid #18d9d9;
-}
-
-#zen-participation h3 {
-	order: 1;
-	flex-basis: 50%;
-}
-
-#zen-participation p {
-	order: 2;
-	flex-basis: 50%;
 }
 
 a {
@@ -191,12 +127,6 @@ a:visited {
 	font-weight: normal;
 }
 
-[role="main"] p:first-of-type::first-letter {
-	font-size: 3rem;
-	font-family: "Times New Roman", Times, serif;
-	float: left;
-}
-
 nav ul li {
 	border-top: solid 1px #18d9d9;
 	padding-top: 10px;
@@ -205,4 +135,92 @@ nav ul li {
 nav ul li:last-child {
 	border-bottom: solid 1px #18d9d9;
 	padding-bottom: 10px;
+}
+
+/* Estilo para desktop */
+@media screen and (min-width: 769px) {
+	.page-wrapper {
+		max-width: 1280px;
+		width: 80%;
+		position: relative;
+	}
+
+	p {
+		text-indent: 1em;
+	}
+
+	#zen-intro {
+		height: 450px;
+	}
+
+	#design-selection {
+		position: absolute;
+		top: 450px;
+		left: 62%;
+		padding: 0% 3%;
+	}
+
+	.explanation {
+		width: 60%;
+		height: 420px;
+		margin-right: 35%;
+		border-right: solid 2px #18d9d9;
+		padding-right: 2%;
+	}
+
+	#zen-benefits {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		border-bottom: solid 1px #18d9d9;
+		border-top: solid 1px #18d9d9;
+	}
+
+	#zen-benefits h3 {
+		flex-grow: 3;
+		order: 2;
+	}
+
+	#zen-benefits p {
+		flex-grow: 7;
+		order: 1;
+	}
+
+	#zen-participation {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		border-top: 1px solid #18d9d9;
+	}
+
+	#zen-participation h3 {
+		order: 1;
+		flex-basis: 50%;
+	}
+
+	#zen-participation p {
+		order: 2;
+		flex-basis: 50%;
+	}
+
+	[role="article"] > p {
+		text-align: center;
+		line-height: 1.5;
+	}
+
+	[role="main"] p:first-of-type::first-letter {
+		font-size: 3rem;
+		font-family: "Times New Roman", Times, serif;
+		float: left;
+	}
+}
+
+
+@media print {
+	* {
+		color: black !important;
+		background-color: white !important;
+		border: none !important;
+		font-family: 'Times New Roman', Times, serif;
+	}
 }
