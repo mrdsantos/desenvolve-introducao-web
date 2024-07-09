@@ -6,6 +6,7 @@ Ouro { color: #C9A62A; }
 Bege { color: #735D1D; }
  */
 
+/* Estilos gerais para HTML */
 html {
 	font-family: "Inter", "Verdana", "Tahoma", sans-serif;
 	font-size: 16px;
@@ -16,15 +17,18 @@ html p {
 	color: #202026;
 }
 
+/* Estilos gerais para o body */
 body {
 	background: linear-gradient(to right, #868f98 33%, #ced2d5 33%);
 	height: 100%;
 }
 
+/* Estilos para o container da página */
 .page__wrapper {
 	margin: 28px 28px;
 }
 
+/* Estilos para o cabeçalho */
 header {
 	background-color: #202026;
 	height: fit-content;
@@ -32,6 +36,7 @@ header {
 	max-width: 1024px;
 }
 
+/* Estilos para a seção de informações pessoais */
 .personal_info {
 	display: flex;
 	flex-direction: column;
@@ -44,11 +49,13 @@ header {
 	border-bottom: #c9a62a solid 2px;
 }
 
+/* Estilos para a foto pessoal */
 .personal_photo > img {
 	border: solid 3px white;
 	margin-top: -30px;
 }
 
+/* Estilos para os contatos pessoais */
 .personal_contact {
 	text-align: center;
 }
@@ -67,6 +74,7 @@ header {
 	text-align: center;
 }
 
+/* Lista de contatos pessoais */
 .personal_contact ul {
 	list-style-type: none;
 	display: flex;
@@ -76,34 +84,34 @@ header {
 	padding: 0px;
 }
 
+/* Estilos para itens da lista de contatos pessoais */
 .personal_contact li {
 	color: #f1f0f2;
 	text-align: center;
 	padding-top: 10px;
 	font-weight: 500;
-	/* position: relative;
-	padding-top: 30px;			//Código para desktop
-	text-transform: uppercase;	//faz os icones ficarem
-	font-size: 0.8em; 		//acima do elemento  */
 }
 
+/* Estilos para ícones FontAwesome */
 .fa-solid {
 	color: #c9a62a;
 }
 
+/* Estilos para o conteúdo principal */
 main {
 	background-color: #f1f0f2;
 	padding: 15px;
 	height: fit-content;
 }
 
+/* Estilos para os artigos de histórico pessoal */
 .personal_history > article {
 	margin-bottom: 4vh;
 }
 
+/* Estilos para os cartões de histórico pessoal */
 .personal_history__card:first-child {
-	/* border-bottom: 1px solid red;
-	margin-top: 2vh; */
+	/* Placeholder para personalização futura */
 }
 
 .personal_history__card h1,
@@ -113,6 +121,7 @@ main {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Estilos para cabeçalhos dentro do histórico pessoal */
 .personal_history h2:first-of-type {
 	border-bottom: solid 1px #c9a62a;
 }
@@ -125,10 +134,12 @@ main {
 	margin-bottom: 2vh;
 }
 
+/* Estilos para habilidades */
 .personal_history__card__skills:first-of-type ul {
 	margin-top: 0.7vh;
 }
 
+/* Estilos para o rodapé */
 .footer {
 	background-color: #202026;
 	padding-top: 13px;
@@ -139,11 +150,13 @@ main {
 	color: #ced2d5;
 }
 
+/* Estilos para o texto do rodapé */
 .footer__text {
 	text-align: center;
 	display: block;
 }
 
+/* Estilos para ícones do rodapé */
 .footer__icons ul {
 	list-style-type: none;
 	display: flex;
@@ -166,6 +179,7 @@ main {
 	font-variant: petite-caps;
 }
 
+/* Estilos para a barra de navegação das seções */
 .sections_nav {
 	position: -webkit-sticky;
 	position: sticky;
@@ -177,6 +191,7 @@ main {
 	width: 100%;
 }
 
+/* Estilos para lista de navegação das seções */
 .sections_nav ul {
 	list-style-type: none;
 	display: flex;
@@ -204,11 +219,12 @@ main {
 	font-size: small;
 }
 
+/* Estilos para a seção de perfil de histórico pessoal */
 .personal_history__profile {
+	/* Placeholder para personalização futura */
 }
 
-/* PROGRESS BAR */
-
+/* Estilos para barra de progresso */
 .personal_language__card__progress_bar {
 	width: 80%;
 	margin-top: 0.7vh;
@@ -238,10 +254,12 @@ main {
 	width: inherit;
 }
 
+/* Estilos para telas grandes (desktop) */
 @media screen and (min-width: 1024px) {
 	body {
 		background: linear-gradient(to right, #868f98 33%, #ced2d5 33%);
 	}
+
 	header {
 		max-width: 100%;
 	}
@@ -312,6 +330,7 @@ main {
 	}
 }
 
+/* Estilos para telas médias (tablets) */
 @media screen and (min-width: 769px) {
 	body {
 		display: flex;
@@ -358,10 +377,4 @@ main {
 	#personal_history__skills {
 		grid-area: skills;
 	}
-
-	/* .personal_history {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	} */
 }
